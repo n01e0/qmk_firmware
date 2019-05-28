@@ -21,15 +21,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /*
    *  1       2     3     4     5        ||     6    7     8     9    0
-   *  #     left   down  right  $        ||     pgdn    4     5     6    +
-   *  [       ]      (     )    &        ||       `     1     2     3    \
-   * lower  insert super shift ctrl  Tab || Ent Space   fn    .     0    =
+   *  #     left   pgdown  pgup   $      ||     left down  up   right     +
+   *  [       ]      (     )    &        ||       `     1    [     ]    \
+   * lower insert super shift ctrl super || Ent Space   fn    .     +    BS
    */
   [_RS] = LAYOUT( /* [> RAISE <] */
     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,   KC_9, KC_0 ,
-    KC_HASH, KC_LEFT, KC_DOWN, KC_RGHT, KC_DLR,                    KC_PGDN, KC_4,    KC_5,   KC_6, KC_PLUS ,
-    KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, KC_AMPR,                   KC_GRV,  KC_1,    KC_2,   KC_3, KC_BSLS ,
-    TG(_LW), KC_INS,  KC_LGUI, KC_LSFT, KC_LCTL, KC_TAB, KC_ENT, KC_SPC,  KC_TRNS, KC_DOT, KC_0, KC_EQL  ),
+    KC_HASH, KC_LEFT, KC_PGUP, KC_PGDN, KC_DLR,                    KC_LEFT, KC_DOWN, KC_UP,  KC_RGHT, KC_PLUS ,
+    KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, KC_AMPR,                   KC_GRV,  KC_1,    KC_LBRC,   KC_RBRC, KC_BSLS ,
+    TG(_LW), KC_INS,  KC_LGUI, KC_LCTL, KC_LCTL, KC_LGUI, KC_ENT, KC_SPC,  KC_TRNS, KC_DOT, KC_EQL, KC_BSPC  ),
 
   /*
    * !        @     #    $     %        ||     ^    &    *     (    )
