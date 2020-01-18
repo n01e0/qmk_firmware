@@ -1,0 +1,1252 @@
+cscope 15 $HOME/src/github.com/n01e0/qmk_firmware/keyboards/crkbd/keymaps/n01e0               0000006035
+	@config.h
+
+21 #´agm¨
+Úû
+
+
+27 
+	#MASTER_LEFT
+
+
+	)
+
+31 
+	#SSD1306OLED
+
+
+	)
+
+33 
+	#USE_SERIAL_PD2
+
+
+	)
+
+35 
+	#TAPPING_FORCE_HOLD
+
+
+	)
+
+36 
+	#TAPPING_TERM
+ 100
+
+	)
+
+38 #undeà
+RGBLED_NUM
+
+
+39 
+	#RGBLIGHT_ANIMATIONS
+
+
+	)
+
+40 
+	#RGBLED_NUM
+ 27
+
+	)
+
+41 
+	#RGBLIGHT_LIMIT_VAL
+ 120
+
+	)
+
+42 
+	#RGBLIGHT_HUE_STEP
+ 10
+
+	)
+
+43 
+	#RGBLIGHT_SAT_STEP
+ 17
+
+	)
+
+44 
+	#RGBLIGHT_VAL_STEP
+ 17
+
+	)
+
+45 
+	#BACKLIGHT_LEVELS
+ 10
+
+	)
+
+47 #undeà
+PRODUCT
+
+
+48 
+	#PRODUCT
+ "V“' hÙsw­·bË H–idox/CÜÃ/CRKBD s¶™ k“b"
+
+	)
+
+50 
+	#NO_ACTION_MACRO
+
+
+	)
+
+51 
+	#NO_ACTION_FUNCTION
+
+
+	)
+
+	@keymap.c
+
+1 #šþud
+QMK_KEYBOARD_H
+
+
+2 
+	~"boÙlßd”.h
+"
+
+3 #ifdeà
+PROTOCOL_LUFA
+
+
+4 
+	~"luç.h
+"
+
+5 
+	~"¥l™_utž.h
+"
+
+7 #ifdeà
+SSD1306OLED
+
+
+8 
+	~"ssd1306.h
+"
+
+11 
+keym­_cÚfig_t
+ 
+keym­_cÚfig
+;
+
+13 #ifdeà
+RGBLIGHT_ENABLE
+
+
+15 
+rgblight_cÚfig_t
+ 
+rgblight_cÚfig
+;
+
+18 
+ušt8_t
+ 
+is_ma¡”
+;
+
+24 
+	#_QWERTY
+ 0
+
+	)
+
+25 
+	#_LOWER
+ 1
+
+	)
+
+26 
+	#_RAISE
+ 2
+
+	)
+
+27 
+	#_ADJUST
+ 3
+
+	)
+
+29 
+	ecu¡om_keycodes
+ {
+
+30 
+	mQWERTY
+ = 
+SAFE_RANGE
+,
+
+31 
+	mLOWER
+,
+
+32 
+	mRAISE
+,
+
+33 
+	mADJUST
+,
+
+34 
+	mBACKLIT
+,
+
+35 
+	mRGBRST
+
+
+38 
+	emaüo_keycodes
+ {
+
+39 
+	mKC_SAMPLEMACRO
+,
+
+42 
+	#KC______
+ 
+KC_TRNS
+
+
+	)
+
+43 
+	#KC_XXXXX
+ 
+KC_NO
+
+
+	)
+
+44 
+	#KC_LOWER
+ 
+LOWER
+
+
+	)
+
+45 
+	#KC_RAISE
+ 
+RAISE
+
+
+	)
+
+46 
+	#KC_RST
+ 
+RESET
+
+
+	)
+
+47 
+	#KC_ERST
+ 
+EEPROM_RESET
+
+
+	)
+
+48 
+	#KC_LRST
+ 
+RGBRST
+
+
+	)
+
+49 
+	#KC_LTOG
+ 
+RGB_TOG
+
+
+	)
+
+50 
+	#KC_LHUI
+ 
+RGB_HUI
+
+
+	)
+
+51 
+	#KC_LHUD
+ 
+RGB_HUD
+
+
+	)
+
+52 
+	#KC_LSAI
+ 
+RGB_SAI
+
+
+	)
+
+53 
+	#KC_LSAD
+ 
+RGB_SAD
+
+
+	)
+
+54 
+	#KC_LVAI
+ 
+RGB_VAI
+
+
+	)
+
+55 
+	#KC_LVAD
+ 
+RGB_VAD
+
+
+	)
+
+56 
+	#KC_LMOD
+ 
+RGB_MOD
+
+
+	)
+
+57 
+	#KC_SFCPS
+ 
+	`SFT_T
+(
+KC_CAPS
+)
+
+	)
+
+58 
+	#KC_CTLTB
+ 
+	`CTL_T
+(
+KC_TAB
+)
+
+	)
+
+59 
+	#KC_GUIEI
+ 
+	`GUI_T
+(
+KC_LANG2
+)
+
+	)
+
+60 
+	#KC_ALTKN
+ 
+	`ALT_T
+(
+KC_LANG1
+)
+
+	)
+
+62 cÚ¡ 
+ušt16_t
+ 
+PROGMEM
+ 
+	gkeym­s
+[][
+MATRIX_ROWS
+][
+MATRIX_COLS
+] = {
+
+63 [
+_QWERTY
+] = 
+LAYOUT_kc
+( \
+
+65 
+ESC
+, 
+Q
+, 
+W
+, 
+E
+, 
+R
+, 
+T
+, 
+Y
+, 
+U
+, 
+I
+, 
+O
+, 
+P
+, 
+BSPC
+,\
+
+67 
+CTLTB
+, 
+A
+, 
+S
+, 
+D
+, 
+F
+, 
+G
+, 
+H
+, 
+J
+, 
+K
+, 
+L
+, 
+SCLN
+, 
+QUOT
+,\
+
+69 
+LSFT
+, 
+Z
+, 
+X
+, 
+C
+, 
+V
+, 
+B
+, 
+N
+, 
+M
+, 
+COMM
+, 
+DOT
+, 
+SLSH
+, 
+RSFT
+,\
+
+71 
+GUIEI
+, 
+LOWER
+, 
+SPC
+, 
+ENT
+, 
+RAISE
+, 
+ALTKN
+ \
+
+75 [
+_LOWER
+] = 
+LAYOUT_kc
+( \
+
+77 
+GRV
+, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 
+BSPC
+,\
+
+79 
+CTLTB
+, 
+F1
+, 
+F2
+, 
+F3
+, 
+F4
+, 
+F5
+, 
+LEFT
+, 
+DOWN
+, 
+UP
+, 
+RIGHT
+, 
+PGUP
+, 
+ENT
+,\
+
+81 
+LSFT
+, 
+F6
+, 
+F7
+, 
+F8
+, 
+F9
+, 
+F10
+, 
+F16
+, 
+F17
+, 
+F18
+, 
+F19
+, 
+PGDN
+, 
+RSFT
+,\
+
+83 
+GUIEI
+, 
+LOWER
+, 
+SPC
+, 
+ENT
+, 
+RAISE
+, 
+ALTKN
+ \
+
+87 [
+_RAISE
+] = 
+LAYOUT_kc
+( \
+
+89 
+TAB
+, 
+EXLM
+, 
+AT
+, 
+HASH
+, 
+DLR
+, 
+PERC
+, 
+CIRC
+, 
+AMPR
+, 
+ASTR
+, 
+LPRN
+, 
+RPRN
+, 
+DEL
+,\
+
+91 
+CTLTB
+, 
+XXXXX
+, XXXXX, XXXXX, XXXXX, XXXXX, 
+MINS
+, 
+EQL
+, 
+LCBR
+, 
+RCBR
+, 
+PIPE
+, 
+BSLS
+,\
+
+93 
+LSFT
+, 
+XXXXX
+, 
+VOLD
+, 
+VOLU
+, 
+MUTE
+, 
+MPLY
+, 
+UNDS
+, 
+PLUS
+, 
+LBRC
+, 
+RBRC
+, 
+SLSH
+, 
+RSFT
+,\
+
+95 
+GUIEI
+, 
+LOWER
+, 
+SPC
+, 
+ENT
+, 
+RAISE
+, 
+ALTKN
+ \
+
+99 [
+_ADJUST
+] = 
+LAYOUT_kc
+( \
+
+101 
+RST
+, 
+LRST
+, 
+XXXXX
+, XXXXX, XXXXX, 
+ERST
+, 
+MNXT
+, 
+MPRV
+, 
+MFFD
+, 
+MRWD
+, XXXXX, 
+EJCT
+,\
+
+103 
+LTOG
+, 
+LHUI
+, 
+LSAI
+, 
+LVAI
+, 
+PGUP
+, 
+HOME
+, 
+LEFT
+, 
+DOWN
+, 
+UP
+, 
+RIGHT
+, 
+XXXXX
+, 
+INS
+,\
+
+105 
+LMOD
+, 
+LHUD
+, 
+LSAD
+, 
+LVAD
+, 
+PGDN
+, 
+END
+, 
+BRID
+, 
+BRIU
+, 
+VOLD
+, 
+VOLU
+, 
+MUTE
+, 
+MPLY
+,\
+
+107 
+GUIEI
+, 
+LOWER
+, 
+SPC
+, 
+ENT
+, 
+RAISE
+, 
+ALTKN
+ \
+
+112 
+	gRGB_cu¼’t_mode
+;
+
+115 
+	$upd©e_Œi_Ïy”_RGB
+(
+ušt8_t
+ 
+Ïy”1
+, ušt8_ˆ
+Ïy”2
+, ušt8_ˆ
+Ïy”3
+) {
+
+116 ià(
+	`IS_LAYER_ON
+(
+Ïy”1
+è&& IS_LAYER_ON(
+Ïy”2
+)) {
+
+117 
+	`Ïy”_Ú
+(
+Ïy”3
+);
+
+119 
+	`Ïy”_off
+(
+Ïy”3
+);
+
+121 
+	}
+}
+
+123 
+	$m©rix_š™_u£r
+() {
+
+124 #ifdeà
+RGBLIGHT_ENABLE
+
+
+125 
+RGB_cu¼’t_mode
+ = 
+rgblight_cÚfig
+.
+mode
+;
+
+128 #ifdeà
+SSD1306OLED
+
+
+129 
+	`iÙa_gfx_š™
+(!
+	`has_usb
+());
+
+131 
+	}
+}
+
+134 #ifdeà
+SSD1306OLED
+
+
+137 cÚ¡ *
+»ad_Ïy”_¡©e
+();
+
+138 cÚ¡ *
+»ad_logo
+();
+
+139 
+£t_keylog
+(
+ušt16_t
+ 
+keycode
+, 
+key»cÜd_t
+ *
+»cÜd
+);
+
+140 cÚ¡ *
+»ad_keylog
+();
+
+141 cÚ¡ *
+»ad_keylogs
+();
+
+148 
+	$m©rix_sÿn_u£r
+() {
+
+149 
+	`iÙa_gfx_sk
+();
+
+150 
+	}
+}
+
+152 
+	$m©rix_»nd”_u£r
+(
+Ch¬aù”M©rix
+ *
+m©rix
+) {
+
+153 ià(
+is_ma¡”
+) {
+
+155 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_Ïy”_¡©e
+());
+
+156 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_keylog
+());
+
+157 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_keylogs
+());
+
+162 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_Ïy”_¡©e
+());
+
+163 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_keylog
+());
+
+164 
+	`m©rix_wr™e_Ê
+(
+m©rix
+, 
+	`»ad_keylogs
+());
+
+167 
+	}
+}
+
+169 
+	$m©rix_upd©e
+(
+Ch¬aù”M©rix
+ *
+de¡
+, cÚ¡ Ch¬aù”M©rix *
+sourû
+) {
+
+170 ià(
+	`memcmp
+(
+de¡
+->
+di¥Ïy
+, 
+sourû
+->display, (dest->display))) {
+
+171 
+	`memýy
+(
+de¡
+->
+di¥Ïy
+, 
+sourû
+->display, (dest->display));
+
+172 
+de¡
+->
+dœty
+ = 
+Œue
+;
+
+174 
+	}
+}
+
+176 
+	$iÙa_gfx_sk_u£r
+() {
+
+177 
+Ch¬aù”M©rix
+ 
+m©rix
+;
+
+178 
+	`m©rix_þ—r
+(&
+m©rix
+);
+
+179 
+	`m©rix_»nd”_u£r
+(&
+m©rix
+);
+
+180 
+	`m©rix_upd©e
+(&
+di¥Ïy
+, &
+m©rix
+);
+
+181 
+	}
+}
+
+184 
+boÞ
+ 
+	$´oûss_»cÜd_u£r
+(
+ušt16_t
+ 
+keycode
+, 
+key»cÜd_t
+ *
+»cÜd
+) {
+
+185 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+186 #ifdeà
+SSD1306OLED
+
+
+187 
+	`£t_keylog
+(
+keycode
+, 
+»cÜd
+);
+
+192 
+keycode
+) {
+
+193 
+LOWER
+:
+
+194 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+195 
+	`Ïy”_Ú
+(
+_LOWER
+);
+
+196 
+	`upd©e_Œi_Ïy”_RGB
+(
+_LOWER
+, 
+_RAISE
+, 
+_ADJUST
+);
+
+198 
+	`Ïy”_off
+(
+_LOWER
+);
+
+199 
+	`upd©e_Œi_Ïy”_RGB
+(
+_LOWER
+, 
+_RAISE
+, 
+_ADJUST
+);
+
+201  
+çl£
+;
+
+203 
+RAISE
+:
+
+204 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+205 
+	`Ïy”_Ú
+(
+_RAISE
+);
+
+206 
+	`upd©e_Œi_Ïy”_RGB
+(
+_LOWER
+, 
+_RAISE
+, 
+_ADJUST
+);
+
+208 
+	`Ïy”_off
+(
+_RAISE
+);
+
+209 
+	`upd©e_Œi_Ïy”_RGB
+(
+_LOWER
+, 
+_RAISE
+, 
+_ADJUST
+);
+
+211  
+çl£
+;
+
+213 
+ADJUST
+:
+
+214 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+215 
+	`Ïy”_Ú
+(
+_ADJUST
+);
+
+217 
+	`Ïy”_off
+(
+_ADJUST
+);
+
+219  
+çl£
+;
+
+221 
+RGB_MOD
+:
+
+222 #ifdeà
+RGBLIGHT_ENABLE
+
+
+223 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+224 
+	`rgblight_mode
+(
+RGB_cu¼’t_mode
+);
+
+225 
+	`rgblight_¡•
+();
+
+226 
+RGB_cu¼’t_mode
+ = 
+rgblight_cÚfig
+.
+mode
+;
+
+229  
+çl£
+;
+
+231 
+RGBRST
+:
+
+232 #ifdeà
+RGBLIGHT_ENABLE
+
+
+233 ià(
+»cÜd
+->
+ev’t
+.
+´es£d
+) {
+
+234 
+	`“cÚfig_upd©e_rgblight_deçuÉ
+();
+
+235 
+	`rgblight_’abË
+();
+
+236 
+RGB_cu¼’t_mode
+ = 
+rgblight_cÚfig
+.
+mode
+;
+
+241  
+Œue
+;
+
+242 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+2
+18
+config.h
+keymap.c
